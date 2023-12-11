@@ -2,5 +2,11 @@
   "dependencies": {
     "express": "^4.18.2",
     "three": "^0.153.0"
+  },
+  "scripts": {
+    "build": "npm install && copyfiles node_modules/three/examples/jsm/controls/OrbitControls.js node_modules/three/build/three.module.js public/src/controls"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }

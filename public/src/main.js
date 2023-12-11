@@ -1,5 +1,5 @@
-import * as THREE from "three";
-import { OrbitControls } from "/node_modules/three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "./controls/OrbitControls.js";
+import * as THREE from "./controls/three.module.js";
 import { LoadGLTFByPath } from "./Helpers/ModelHelper.js";
 
 const loaderContainer = document.getElementById("loader-container");
