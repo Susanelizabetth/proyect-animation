@@ -4,9 +4,9 @@
     "deploy": "gh-pages -d dist"
   },
   "gh-pages": {
-    "src": [
-      "dist/**/*"
-    ]
+   
+      "src": ["public/**/*"]
+    
   },
   "dependencies": {
     "express": "^4.18.2",
