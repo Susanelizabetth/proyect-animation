@@ -1,0 +1,18 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 14  # or another version that is compatible
+        - nvm use 14
+        - npm install
+    # IMPORTANT - Please verify your build commands
+    build:
+      commands: []
+  artifacts:
+    baseDirectory: public
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
