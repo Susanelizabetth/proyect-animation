@@ -3,12 +3,16 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 14 # or another version that is compatible
+        - nvm install 14
         - nvm use 14
         - npm install
-    # IMPORTANT - Please verify your build commands
+        - npm ci
     build:
-      commands: []
+      commands:
+        - npm install
+  postBuild:
+    commands:
+      - node app.js &
   artifacts:
     baseDirectory: .
     files:
